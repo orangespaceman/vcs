@@ -11,145 +11,227 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-
-h1 {
-  color: #eef0f2;
-  text-align: center;
-  font-size: 2.4em;
-  letter-spacing: -1px;
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 100;
-  margin: 0 0 0.5em 0;
-  position: relative;
-}
-
-@media (min-width: 68em) {
-  h1 {
-    font-size: 4em;
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
   }
-}
 
-p {
-  font-family: "Montserrat", sans-serif;
-  color: #eef0f2;
-  font-size: 1.2em;
-  line-height: 1.5;
-}
+  /*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
 
-/* blocks */
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
 
-.block {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
 
-.block-content {
-  max-width: 64em;
-  margin: 0 auto;
-  padding: 5em 2em;
-  position: relative;
-  z-index: 2;
-}
+  /*
+   * A better looking default horizontal rule
+   */
 
-/* introduction block */
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
 
-.block--introduction {
-  background-color: #353b3c;
-}
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
 
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+
+  /*
+   * Remove default fieldset styles.
+   */
+
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+
+  textarea {
+    resize: vertical;
+  }
+
+  /* ==========================================================================
+     Author's custom styles
+     ========================================================================== */
+
+  html {
+    box-sizing: border-box;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  h1,
+  h2 {
+    color: #eef0f2;
+    text-align: center;
+    font-size: 2.4em;
+    letter-spacing: -1px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 100;
+    margin: 0 0 0.5em 0;
+    position: relative;
+  }
+
+  @media (min-width: 68em) {
+    h1 {
+      font-size: 4em;
+    }
+
+    h2 {
+      font-size: 3em;
+    }
+  }
+
+  p {
+    font-family: "Montserrat", sans-serif;
+    color: #eef0f2;
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+
+  a {
+    color: #4f4641;
+    opacity: 1;
+    transition: all 0.5s;
+  }
+
+  a:hover {
+    opacity: 0.8;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  /* blocks */
+
+  .block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .block-content {
+    max-width: 64em;
+    margin: 0 auto;
+    padding: 5em 2em;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* introduction block */
+
+  .block--introduction {
+    background-color: #353b3c;
+  }
+
+  /* about block */
+
+  .block--about {
+    background-color: #846a6a;
+  }
+
+  /* equipment block */
+
+  .block--equipment {
+    background-color: #a2999e;
+  }
+  .block--equipment img {
+    margin-bottom: 20px;
+  }
+
+  /* services block */
+
+  .block--services {
+    background-color: #c6c7c4;
+  }
+
+  .block--services h2,
+  .block--services p {
+    color: #353b3c;
+  }
+
+
+  /* contact block */
+
+  .block--contact {
+    background-color: #eef0f2;
+  }
+
+  .block--contact h2,
+  .block--contact p {
+    color: #353b3c;
+  }
+
+  .block--contact .email {
+    color: #846a6a;
+  }
+
+  /* footer */
+
+  footer {
+    background-color: #eef0f2;
+    text-align: center;
+  }
+
+  .footer-img {
+    max-width: 100%;
+  }
+
+  /* columns */
+
+  @media (min-width: 68em) {
+    .columns {
+      display: flex;
+      margin-left: -3em;
+      margin-right: -3em;
+    }
+
+    .columns--reversed {
+      flex-direction: row-reverse;
+    }
+
+    .column {
+      flex: 1;
+      margin-left: 3em;
+      margin-right: 3em;
+    }
+  }
